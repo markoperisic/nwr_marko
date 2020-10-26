@@ -1,0 +1,60 @@
+h1 {
+  color: #0041a3;
+  font-family: "Montserrat, sans-serif";
+  font-size: 50px;
+}
+
+.nav {
+  width: 960px;
+}
+
+.nav .nav-item {
+  height: 40px;
+  background-color: seagreen;
+  width: 960px;
+  display: inline-block;
+}
+
+p.quote {
+  border-color: 2x solid black;
+  font-style: italic;
+  font-size: 12px;
+  line-height: 120%;
+  color: dimgray;
+}
+
+h2 {
+  border-color: 2x solid black;
+  font-style: italic;
+  font-size: 12px;
+  line-height: 120%;
+  color: dimgray;
+}
+
+.alert {
+  border: 1px black;
+  background-color: black;
+}
+
+.extends:hover {
+  opacity: 0.6;
+  color: black;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.extends p.text-warning {
+  color: red;
+  font-weight: bold;
+}
+
+.extends p.text-info {
+  color: green;
+  font-weight: bold;
+}
+
+.extends p.text-success {
+  color: blue;
+  font-weight: bolder;
+}
+/*# sourceMappingURL=style.css.map */

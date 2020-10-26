@@ -1,0 +1,112 @@
+.container {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 0.2fr 1fr 1fr 1fr;
+      grid-template-rows: 0.2fr 1fr 1fr 1fr;
+  grid-gap: 0.2rem;
+      grid-template-areas: "nav nav nav nav" "main main item1 item2" "main main item3 item3" "item4 item5 item5 item6" "footer footer footer footer";
+}
+
+nav {
+  background: #e4635a;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: nav;
+}
+
+main {
+  background: rgba(0, 153, 255, 0.938);
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: main;
+}
+
+.item1 {
+  background: #83d3b8;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: item1;
+}
+
+.item2 {
+  background: #83d3b8;
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: item2;
+}
+
+.item3 {
+  background: gold;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: item3;
+}
+
+.item4 {
+  background: green;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: item4;
+}
+
+.item5 {
+  background: green;
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: item5;
+}
+
+.item6 {
+  background: green;
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: item6;
+}
+
+footer {
+  background: hotpink;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: footer;
+  height: 50px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    -ms-grid-rows: 0.07fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+        grid-template-rows: 0.07fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "nav nav nav nav" "main main main item1" "main main main item2" "item3 item3 item3 item3" "item4 item4 item5 item5" "item6 item6 item6 item6" "footer footer footer footer";
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 0.07fr 0.35fr 0.15fr 0.15fr 0.15fr 0.15fr;
+        grid-template-rows: 0.07fr 0.35fr 0.15fr 0.15fr 0.15fr 0.15fr;
+        grid-template-areas: "nav nav" "main main" "item3 item3" "item1 item2" "item6 item6" "item4 item5" "footer footer";
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 0.2fr 0.4fr 0.4fr 0.4fr 0.3fr 0.3fr 0.3fr 0.2fr;
+        grid-template-rows: 0.2fr 0.4fr 0.4fr 0.4fr 0.3fr 0.3fr 0.3fr 0.2fr;
+        grid-template-areas: "nav" "item3" "item1" "item2" "main" "item4" "item5" "item6" "footer";
+  }
+}
+/*# sourceMappingURL=style.css.map */

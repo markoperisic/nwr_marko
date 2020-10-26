@@ -1,0 +1,71 @@
+@mixin button {
+    border: none;
+    padding: 10px 30px;
+    border-radius: 3px;
+    color: white;
+    font-size: large;
+   
+    
+}
+.slika1 {
+    background-image: url('../assets/slika.png');
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    border: 2px solid red;
+    p {
+        color: gray;
+    }
+}
+.cont-1 {
+    padding-left: 10px;
+    padding-top: 10px;
+    
+}
+    
+
+.cont-2 {
+    grid-template-columns: 1fr 1fr;
+    padding-right: 10px;
+    p {
+        border: 2px solid blue;
+        color: gray;
+    }
+
+    p:hover {
+        background-color: rgb(84, 164, 230);
+        color: white;
+        box-shadow: 0px 2px 0px  rgb(84, 164, 230);
+
+    }
+    button {
+        @include button()
+    }
+}
+
+.btn {
+    justify-content: flex-end;
+    display: flex;
+    padding-right: 0;
+    padding-left: 1px;
+    margin-top: 30px;
+
+    .dugme1{
+        margin-right: 20px;
+        background-color: purple ;
+        box-shadow: 5px 5px 0px rgba(243, 239, 243, 0.986);
+
+    }
+    .dugme2 {
+        background-color: rgba(55, 0, 128, 0.692);
+        box-shadow: 5px 5px 0px rgb(240, 234, 243);
+    }
+}

@@ -1,0 +1,7 @@
+@mixin media {
+    @media (min-width:1000px ){
+        .resonsive {
+            background-color: green;
+        }
+    }
+}

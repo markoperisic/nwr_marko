@@ -1,0 +1,92 @@
+@import "variables";
+
+
+@mixin navItem {
+    height: 40px;
+    background-color: seagreen;
+    width: $navWidth;
+    display: inline-block;
+
+}
+
+@mixin quote {
+    border-color: 2x solid black;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 120%;
+    color: dimgray;
+    
+}
+
+
+
+h1 {
+    color: $primary;
+    font-family: $fontfamily;
+    font-size: $fontsize;
+}
+
+.nav {
+    width: $navWidth;
+    
+    .nav-item {
+        @include navItem;
+    }
+    
+}
+
+p {
+    &.quote {
+        @include quote;
+    }
+}
+
+h2 {
+    @include quote;
+}
+
+.alert {
+    border: 1px black;
+    background-color: fade-out($color: #000000, $amount: 0);
+}
+
+.extends {
+    &:hover {
+        opacity: 0.6;
+        color:black ;
+        transition: 0.4s;
+     }
+    
+    
+    p {
+        &.text {
+            &-success {
+               @extend %info;
+               
+                
+            }
+            &-warning  {
+                @extend %alert;
+            }
+            &-info {
+                @extend %success;
+            }
+        }
+    }
+}
+%alert {
+    color: red;
+    font-weight: bold;
+    
+}
+
+%success {
+    color: green;
+    font-weight: bold;
+
+}
+
+%info {
+    color: blue;
+    font-weight: bolder;
+}
