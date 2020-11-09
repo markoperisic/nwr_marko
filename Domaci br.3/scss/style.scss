@@ -1,0 +1,160 @@
+nav{
+    img {
+     width: 100px;
+    }
+    span {
+        color: white;
+    }
+    ul {
+        display: flex;
+        list-style-type: none;
+        padding: 5px;
+        color: white;
+        margin-bottom: 0px;
+       li{
+           padding: 10px;
+       }
+       a {
+           border: none;
+
+       }
+    }
+    a {
+        border: 0.5px solid white;
+        padding: 5px 20px;
+        border-radius: 20px;
+        color: white;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+
+.kolona1 {
+    h1 {
+        color: black;
+        font-size: 2.2rem;
+        font-weight: bolder;
+        margin-top: 60px;
+    }
+    
+}  
+
+.csgo {
+    height: 400px;
+}
+.dugme {
+    border: none;
+    padding: 2px 12px;
+    border-radius: 10px;
+    background: rgb(194, 232, 235);
+    color: darkblue;
+}
+
+.turnir {
+    color: white;
+    ul{
+        padding-left: 15px;
+    }
+}
+.stats {
+    ul{
+        padding-left: 16px;
+
+    }
+
+} 
+
+.logos {
+    width: 100px;
+    height: 100px;
+}
+.ikona {
+    width: 100px;
+    height:47px;
+}
+
+.btnf {
+        border: 1px solid rgb(194, 191, 191);
+        padding: 5px 20px;
+        border-radius: 20px;
+        color:  rgb(194, 191, 191);
+        margin-left: 60px;
+        margin-top: 20px;
+       
+        
+        
+        &:hover {
+            text-decoration: none;
+            color:  rgb(194, 191, 191);
+ 
+       }
+
+}
+footer {
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+        color: gray;
+        margin-top: 20px;
+        line-height:1.5rem;
+    }
+}
+
+.icons {
+    width: 32px;
+    height: 32px;
+    
+}
+
+@media only screen and (max-width:1024px){
+    .container {
+        padding: 0px;
+    }
+    ul {
+        align-items: center;
+        
+        li {
+            a {
+                font-size: 0.8rem;
+                padding: 3px;
+            }
+        }
+         
+        
+    }
+    a {
+        font-size: 0.8rem;
+        margin-left: 10px;
+
+    }
+    
+}
+
+@media only screen and (max-width:768px){
+    .container {
+        padding: 0px;
+    
+    }
+    nav {
+        margin: 0px;
+    }
+    ul {
+
+        li {
+
+            a{
+                font-size: 0.8rem;
+                padding: 2px;
+
+            }
+        }
+    }
+    a {
+        font-size: 0.8rem;
+
+    }
+}
+
+

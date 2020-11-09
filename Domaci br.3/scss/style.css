@@ -1,0 +1,140 @@
+nav img {
+  width: 100px;
+}
+
+nav span {
+  color: white;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding: 5px;
+  color: white;
+  margin-bottom: 0px;
+}
+
+nav ul li {
+  padding: 10px;
+}
+
+nav ul a {
+  border: none;
+}
+
+nav a {
+  border: 0.5px solid white;
+  padding: 5px 20px;
+  border-radius: 20px;
+  color: white;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+.kolona1 h1 {
+  color: black;
+  font-size: 2.2rem;
+  font-weight: bolder;
+  margin-top: 60px;
+}
+
+.csgo {
+  height: 400px;
+}
+
+.dugme {
+  border: none;
+  padding: 2px 12px;
+  border-radius: 10px;
+  background: #c2e8eb;
+  color: darkblue;
+}
+
+.turnir {
+  color: white;
+}
+
+.turnir ul {
+  padding-left: 15px;
+}
+
+.stats ul {
+  padding-left: 16px;
+}
+
+.logos {
+  width: 100px;
+  height: 100px;
+}
+
+.ikona {
+  width: 100px;
+  height: 47px;
+}
+
+.btnf {
+  border: 1px solid #c2bfbf;
+  padding: 5px 20px;
+  border-radius: 20px;
+  color: #c2bfbf;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+.btnf:hover {
+  text-decoration: none;
+  color: #c2bfbf;
+}
+
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
+  color: gray;
+  margin-top: 20px;
+  line-height: 1.5rem;
+}
+
+.icons {
+  width: 32px;
+  height: 32px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    padding: 0px;
+  }
+  ul {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  ul li a {
+    font-size: 0.8rem;
+    padding: 3px;
+  }
+  a {
+    font-size: 0.8rem;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0px;
+  }
+  nav {
+    margin: 0px;
+  }
+  ul li a {
+    font-size: 0.8rem;
+    padding: 2px;
+  }
+  a {
+    font-size: 0.8rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
