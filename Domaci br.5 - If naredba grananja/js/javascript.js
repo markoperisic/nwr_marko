@@ -415,3 +415,40 @@
 // document.write('Zatvoreno')
 // }
 // }
+
+
+// let a = 90;
+// let b = 50;
+// let c = 60;
+
+// if ( a < b && a < c ) {
+//     document.write(`Najmanji broj je ${a}`);
+//     if (b < c) {
+//         document.write(`Srednji broj je ${b}`);
+//         document.write(`Najveci broj je ${c}`);
+//     }else {
+//         document.write(`Srednji broj je ${c}`);
+//         document.write(`Najveci broj je ${b}`);
+//     }
+// }
+// if ( b < a && b < c) {
+//     document.write(`Najmanji broj je ${b}`);
+//     if ( a < c) {
+//         document.write(`Sredji broj je ${a}`);
+//         document.write(`Najveci broj je ${c}`);
+//     }else {
+//         document.write(`Srednji broj je ${c}`);
+//         document.write(`Najveci broj je ${a}`);
+//     }
+// }
+// if ( c < a && c < b) {
+//     document.write(`Najmanji broj je ${c}`);
+//     if(a < b) {
+//         document.write(`Srednji broj je ${a}`);
+//         document.write(`Najveci broj je ${b}`);
+//     }else {
+//         document.write(`Srednji broj je ${b}`);
+//         document.write(`Najveci broj je ${a}`);
+//     }
+// }
+
